@@ -1,0 +1,173 @@
+<div *ngIf="isLoggedIn$ | async as isLoggedIn">
+  <nav class="navbar navbar-default aa-main-menu">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">
+          <img src="/assets/img/logo.png" class="logo">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li [routerLinkActive]="['active']"><a routerLink="/dashboards">My Dashboard</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink="/library">Library</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink="/peopel">Peopel</a></li>
+        <li class="dropdown" dropdown>
+          <a dropdownToggle  role="button">
+            Amine Abri <span class="caret"></span></a>
+          <ul *dropdownMenu class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" (click)="onLogout()" *ngIf="isLoggedIn$ | async">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="dashboard-tabs">
+    <ul>
+      <li [routerLinkActive]="['current']">
+        <a routerLink="/home" class="btn">
+          <span>Home</span>
+        </a>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/opportunities" class="btn" dropdownToggle  role="button">
+          <span>Opportunities</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/leads" class="btn" dropdownToggle  role="button">
+          <span>Leads</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/tasks" class="btn" dropdownToggle  role="button">
+          <span>Tasks</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/files" class="btn" dropdownToggle  role="button">
+          <span>Files</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/accounts" class="btn" dropdownToggle  role="button">
+          <span>Accounts</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/contacts" class="btn" dropdownToggle  role="button">
+          <span>Contacts</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/compaigns" class="btn" dropdownToggle  role="button">
+          <span>Compaigns</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/dashboards" class="btn" dropdownToggle  role="button">
+          <span>Dashboards</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/reports" class="btn" dropdownToggle  role="button">
+          <span>Reports</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/groups" class="btn" dropdownToggle  role="button">
+          <span>Groups</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li [routerLinkActive]="['current']">
+        <a routerLink="/calendar" class="btn">
+          <span>Calendar</span>
+        </a>
+      </li>
+      <li [routerLinkActive]="['current']" class="dropdown" dropdown>
+        <a routerLink="/peopel" class="btn" dropdownToggle  role="button">
+          <span>Peopel</span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

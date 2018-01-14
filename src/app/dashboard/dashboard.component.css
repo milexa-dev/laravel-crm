@@ -1,0 +1,14 @@
+.toolbar-tabs {
+    background-color: transparent;
+    max-height: 40px;
+    vertical-align: 1px;
+    height: 40px;
+    width: 100%;
+    padding: 10px 10px 10px 14px
+}
+.toolbar-tabs a {
+    background-color: #ff6a41e0;
+    color: #ffffff;
+    border-color: #ff6a41;
+    margin: 0 3px 0 3px;
+}

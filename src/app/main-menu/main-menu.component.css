@@ -1,0 +1,91 @@
+.aa-main-menu{
+    background-color: #f5f5f5;
+}
+.active a{
+    background-color: transparent !important;
+    font-weight: 700;
+    border-bottom: 4px solid #ff6b41 !important;
+    line-height: 7px;
+    padding-top: 20px;
+}
+.navbar-nav>li a{
+    line-height: 7px;
+    border-bottom: 4px solid transparent;
+    padding-top: 20px;
+}
+.dashboard-tabs {
+    background-color: #ff6b41;
+    max-height: 40px;
+    vertical-align: 1px;
+    height: 40px;
+    width: 100%;
+}
+.dashboard-tabs ul {
+    list-style: none;
+    padding: 0;
+}
+.dashboard-tabs ul li {
+    display: inline;
+    height: 40px;
+    padding: 11px 0 13px 0;
+}
+.dashboard-tabs ul li a {
+    border-radius: 0;
+    height: 40px;
+    max-height: 40px;
+    color: #ffffff;
+    padding: 10px;
+}
+.dashboard-tabs ul li a:hover {
+    background-color: #4d4b4d;
+    color: #ffffff;
+}
+
+.dashboard-tabs .current a{
+    background-color: #4d4b4d;
+}
+.current {
+    background-color: #4d4b4d;
+}
+.current:after{
+    content: url(../../assets/img/threedots.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    opacity: 0.7;
+    width: 16px;
+    vertical-align: -3px;
+}
+
+.three-dots {
+    background-image: url(../../assets/img/threedots.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    opacity: 0.7;
+    width: 16px;
+    vertical-align: -3px;
+}
+.navbar-brand {
+    padding: 0 0 0 17px !important;
+}
+.logo {
+    width: 76%;
+}
+.navbar {
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+}
+.navbar .navbar-default {
+    background-color: white;
+
+}
+.dashboard-tabs ul.dropdown-menu {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background: #4d4b4d;
+}
+.dashboard-tabs ul.dropdown-menu li a:focus,.dashboard-tabs ul.dropdown-menu li a:hover{
+    background-color: #ff6a41;
+}

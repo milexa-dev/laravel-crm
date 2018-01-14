@@ -1,0 +1,15 @@
+<footer class="footer" *ngIf="isLoggedIn$ | async as isLoggedIn">
+  <div class="container-fluid footer-content">
+    <span class="text-muted pull-left"><span class="circle" id="connected"></span> Connected</span>
+    <div class="pull-right">
+      <ul class="list-inline">
+        <li><a href="#">Copyright © 2018 Laravel CRM Inc.</a></li>
+        <li><a href="#">Trust & Terms of Use</a></li>
+        <li>Powered by<a href="#">
+          <img src="/assets/img/logo.png" class="footer-logo">
+        </a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
